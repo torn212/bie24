@@ -194,6 +194,8 @@ public class PageInterceptor<T> implements Interceptor {
 			return target;
 		}
 	}
+	
+	
 
 	@Override
 	public void setProperties(Properties properties) {
