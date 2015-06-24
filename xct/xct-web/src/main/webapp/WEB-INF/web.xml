@@ -5,7 +5,7 @@
 	<display-name>Web Application</display-name>
 
 	<welcome-file-list>
-		<welcome-file>static/index.html</welcome-file>
+		<welcome-file>/static/index.html</welcome-file>
 	</welcome-file-list>
 
 	<!-- Spring MVC配置 -->

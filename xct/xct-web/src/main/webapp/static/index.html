@@ -39,7 +39,7 @@ body {
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 					<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">北京</a>
+				<a src="addr.html" class="navbar-brand bottombtn" href="#">北京</a>
 			</div>
 			<div id="navbar" class="navbar-collapse collapse">
 				<form class="navbar-form navbar-right">
@@ -65,9 +65,9 @@ body {
 		<div class="container" style="text-align: center;">
 			<table class="table" style="text-align: center; margin-bottom: 0px;">
 				<tr>
-					<td><button class="btn btn-primary" type="submit">首页</button></td>
-					<td><button class="btn btn-success" type="submit">发布</button></td>
-					<td><button class="btn btn-info" type="submit">个人</button></td>
+					<td><button src="first.html" class="btn btn-primary bottombtn" type="button">首页</button></td>
+					<td><button src="fb.html" class="btn btn-success bottombtn" type="button">发布</button></td>
+					<td><button src="me.html" class="btn btn-info bottombtn" type="button">个人</button></td>
 				</tr>
 			</table>
 		</div>
@@ -80,12 +80,9 @@ body {
 
 <script type="text/javascript">
 	$(function() {
-		$(".nav-tabs > li").click(function() {
-			$(".nav-tabs > li.active").removeClass("active");
-			$(this).addClass("active");
-			document.getElementById("main").src = $(this).attr("id");
+		$(".bottombtn").click(function() {
+			document.getElementById("main").src = $(this).attr("src");
 		});
-		// $(this).addClass("active").siblings().removeClass("active");
 	});
 </script>
 </html>

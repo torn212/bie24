@@ -20,23 +20,31 @@
 <body>
 
 	<div class="list-group">
-		<a href="#" class="list-group-item">
+		<a src="zp/zp.html" href="#" class="list-group-item">
 			<h4 class="list-group-item-heading">招聘求职</h4>
 			<p class="list-group-item-text">浏览工作岗位,发布个人求职信息.</p>
-		</a>
-		<a href="#" class="list-group-item">
+		</a> <a src="zl/zl.html" href="#" class="list-group-item">
 			<h4 class="list-group-item-heading">房屋租赁</h4>
 			<p class="list-group-item-text">海量房源信息.</p>
-		</a>
-		<a href="#" class="list-group-item">
+		</a> <a src="es/es.html" href="#" class="list-group-item">
 			<h4 class="list-group-item-heading">二手买卖</h4>
 			<p class="list-group-item-text">个人闲置二手物品,或二手房源.应有尽有!</p>
+		</a> <a src="sp/sp.html" href="#" class="list-group-item">
+			<h4 class="list-group-item-heading">商铺推广</h4>
+			<p class="list-group-item-text">介绍你的商铺,让更多的人认识!</p>
 		</a>
-		<a href="#" class="list-group-item">
-			<h4 class="list-group-item-heading">店铺推广</h4>
-			<p class="list-group-item-text">介绍你的店铺,让更多的人认识!</p>
-		</a>
-		
+
 	</div>
 </body>
+
+<script type="text/javascript">
+	$(function() {
+		$(".list-group > a").click(function() {
+			parent.document.getElementById("main").src = $(this).attr("src");
+		});
+		// $(this).addClass("active").siblings().removeClass("active");
+	});
+</script>
+
+
 </html>
