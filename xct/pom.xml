@@ -10,7 +10,7 @@
 	<name>xct</name>
 	<url>http://maven.apache.org</url>
 
- 
+
 	<properties>
 		<!-- spring版本号 -->
 		<spring.version>3.2.4.RELEASE</spring.version>
